@@ -108,11 +108,12 @@
                   }
                 }
               }
-              clearEventBubble(evt);
+              //clearEventBubble(evt);
             };
 
             // 放开鼠标，选框消失
             document.onmouseup = function () {
+              //置空
               isSelect = false;
               if (selDiv) {
                 document.body.removeChild(selDiv);
